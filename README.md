@@ -1,5 +1,7 @@
 # React BootCamp
 
+- This is React Version : `^18.2.0`
+
 ## What is React.js
 
 - A client-side Js library for building user interfaces.
