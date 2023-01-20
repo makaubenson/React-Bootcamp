@@ -45,3 +45,9 @@
 
 - Re-usability `(Don't Repeat Yourself)`
 - Separation of concern `(Don't do too many things in one and the same place(function))`
+
+## How is a Component Built?
+
+- By combining `HTML,CSS, and Js`.
+
+- React uses a `Declarative Approach` for building the components. `i.e` With React you will not tell `React` that a certain HTML element should be created and inserted into a specific place on UI as you would be doing with `vanilla Js`. Instead you will define the desired target state(s) and let React figure out the actual Js DOM Instructions.
