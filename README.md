@@ -1,6 +1,6 @@
 # React BootCamp
 
-- This is React Version : `^18.2.0`
+- This is React Version : `^18.0.0`
 
 ## What is React.js
 
