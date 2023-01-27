@@ -13,21 +13,21 @@
 
 - Interactive UIs,
 - Nice transitions instantly
-- Mpdern UIs
+- Modern UIs
 
-## Why Need React in addition to JavaScript since js can do most of what React can do.
+## Why Need React in addition to JavaScript since js can do most of what React can do?
 
 - Js includes too much code for a simple task compared to react.
 - Makes building modern complex UIs simple.
 
 ## Building Single-Page Applications(SPAs)
 
-- Makes a web with multiple page act as a single page since it displays a page to user as if it requested in however it doesnt, it basically just changed the view, or what the user can see.
+- Makes a web with multiple page act as a single page since it displays different pages of the web to the user as if it requested them each time user clicked the page, however it doesn't, it basically just changed the view, or what the user can see.
 
 ## React.js alternatives
 
 - `Angular.js` - framework. It embraces typescript. Needed for complex, bigger projects.
-- `Vue.js` - Framework, less features that angular, but more than vue.js.
+- `Vue.js` - Framework, less features that Angular.js, but more than React.js.
 
 ## Course Outline in Summary
 
@@ -41,7 +41,7 @@
 - All user interfaces in the end are made up of components.
 
 - `Components` are re-usable building blocks in your user interface. Not a must to re-use a component for it to be a component, it's just one of its traits that it is `re-usable`.
-- Each component has one specific task that it focuses on.
+- Each component has `one specific task` that it focuses on.
 
 ### Why Components?
 
@@ -52,4 +52,4 @@
 
 - By combining `HTML,CSS, and Js`.
 
-- React uses a `Declarative Approach` for building the components. `i.e` With React you will not tell `React` that a certain HTML element should be created and inserted into a specific place on UI as you would be doing with `vanilla Js`. Instead you will define the desired target state(s) and let React figure out the actual Js DOM Instructions.
+- React uses a `Declarative Approach` for building the components. `i.e` With React you will not tell `React` that a certain HTML element should be created and inserted into a specific place on UI as you would be doing with `vanilla Js`. `Instead you will define the desired target state(s) and let React figure out the actual Js DOM Instructions.`
