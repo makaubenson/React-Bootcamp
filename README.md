@@ -81,3 +81,7 @@
 - With uppercase, React understands the element as a custome component.
 - React understands all lowercase elements as built in HTML elements.
 - `Rule`: You must have One roote element per return statement.
+
+## Re-usability
+
+- We can make components re-usable using `parameters` and a concept called `props`
