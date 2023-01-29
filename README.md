@@ -85,3 +85,4 @@
 ## Re-usability
 
 - We can make components re-usable using `parameters` and a concept called `props`
+- `Props` makes components re-usable and also makes it possible to share data amongst components.
