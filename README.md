@@ -63,3 +63,20 @@
 - JSX stands for Javascript XML
 
 ## How React Works
+
+- It is advisable to put new components into new files.
+- In react we may end up with 100s of files since there are many components in a react app.
+- `App.js` will be used as the `root component`.
+
+- A React App has a `root` component which holds other components.
+- ![image]
+- A component in react is just a js function.
+
+#### Note:
+
+- Custom Components must Start with a Capital letter e.g `ExpenseItem` in
+  `function ExpenseItem() {
+  return <h2>Expense Item!</h2>;
+}`
+- With uppercase, React understands the element as a custome component.
+- React understands all lowercase elements as built in HTML elements.
