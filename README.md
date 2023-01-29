@@ -59,3 +59,7 @@
 - React code is just JS code.
 - `index.js` holds code that initially executed on load of react app.
 - `index.css` holds css styling for the react app.
+
+- JSX stands for Javascript XML
+
+## How React Works
