@@ -3,7 +3,7 @@ import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 //A component in react is just a js function.
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   //we access the set attributes using props.(which stands for properties)
   return (
     <Card className="expense-item">
@@ -14,6 +14,6 @@ function ExpenseItem(props) {
       </div>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
