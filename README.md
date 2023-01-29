@@ -171,6 +171,18 @@ function ExpenseItem(props) {
 export default ExpenseItem;
 ```
 
-## composition
+## Composition
 
--
+- Composition in React.js refers to the technique of combining multiple smaller components to build a larger, complex component.
+- This allows for modularity, code reuse, and easier maintenance of code.
+- The child components receive data (`props`) from their parent component and render their own UI.
+- The parent component uses the child components as its building blocks, composing them to form a complete UI.
+- This pattern promotes encapsulation, making the code more readable and maintainable.
+- Whenever you compine components, you are using `composition`
+- `props.children` feature of the composition allows you to create a `wrapper component`
+
+### props.children
+
+```
+`props.children` is a special prop in React that represents the content between a component's opening and closing tags. It can be used to pass any content, such as text, elements, or other components, to a component. For example, a component that acts as a container can use "props.children" to render its content within its own UI structure. This way, the container component can abstract away the internal details of how the content is rendered and allow for greater customization.
+```
