@@ -87,6 +87,10 @@
 - We can make components re-usable using `parameters` and a concept called `props`
 - `Props` makes components re-usable and also makes it possible to share data amongst components.
 
+### props
+
+- `Props (short for properties) are used in React to pass data from a parent component to its child components. A parent component defines and sets the values of the props, and these values are then passed to the child components as arguments. The child components can access the props via the "this.props" object, and can use the values within their own render methods. This way, the parent component can control the data that is displayed in its child components, and can easily change the data that is passed to the children by changing the props. This pattern allows for great reusability and modularity in the code, as the child components can be used in different contexts and with different data, as long as they receive the correct props from their parent component.`
+
 - `e.g`
 
 ```
