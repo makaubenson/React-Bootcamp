@@ -53,3 +53,9 @@
 - By combining `HTML,CSS, and Js`.
 
 - React uses a `Declarative Approach` for building the components. `i.e` With React you will not tell `React` that a certain HTML element should be created and inserted into a specific place on UI as you would be doing with `vanilla Js`. `Instead you will define the desired target state(s) and let React figure out the actual Js DOM Instructions.`
+
+## Understanding File Structure.
+
+- React code is just JS code.
+- `index.js` holds code that initially executed on load of react app.
+- `index.css` holds css styling for the react app.
