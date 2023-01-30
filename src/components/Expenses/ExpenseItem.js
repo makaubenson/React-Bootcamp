@@ -4,6 +4,10 @@ import "./ExpenseItem.css";
 
 //A component in react is just a js function.
 const ExpenseItem = (props) => {
+  const clickHandler = () => {
+    console.log("Clicked!!");
+  };
+
   //we access the set attributes using props.(which stands for properties)
   return (
     <Card className="expense-item">
@@ -12,6 +16,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
         <div className="expense-item__price">${props.amount}</div>
       </div>
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 };

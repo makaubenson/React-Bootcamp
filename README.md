@@ -190,3 +190,5 @@ export default ExpenseItem;
 ```
 `props.children` is a special prop in React that represents the content between a component's opening and closing tags. It can be used to pass any content, such as text, elements, or other components, to a component. For example, a component that acts as a container can use "props.children" to render its content within its own UI structure. This way, the container component can abstract away the internal details of how the content is rendered and allow for greater customization.
 ```
+
+## User Interaction and State
