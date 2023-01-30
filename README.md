@@ -192,3 +192,19 @@ export default ExpenseItem;
 ```
 
 ## User Interaction and State
+
+- React executes once and doesnt repeat, so if a change occurs in any component function, we need to specifically tell react to load that component function again.
+
+- We do so by importing `useState` from the React library.
+- Import by defining: `import React, { useState } from "react";`
+- `useState` is a hook in React that allows functional components to have `state variables.`
+- It returns an array with two elements: the `current state value`, and `a function` that can be used to update it.
+- The syntax is: `const [state, setState] = useState(initialValue).`
+- In the above example, `state` is pointer to the managed value(`initialValue`)
+- `setState` is a function that will be called to set a new `title`
+
+- `useState` returns an array with 2 elements `currentStateValue` and function for updating the `currentStateValue`.
+
+- `A React hook` is a special function that allows functional components to have access to state, lifecycle methods, and other React features typically only available to class components.
+- Hooks are a way to reuse stateful logic between components and make code more readable and maintainable. Examples of built-in hooks include `useState`, `useEffect`, and `useContext`.
+- React hooks shoukd only be called inside Component functions and not outside.
