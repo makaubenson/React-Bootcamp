@@ -204,6 +204,7 @@ export default ExpenseItem;
 - `setState` is a function that will be called to set a new `title`
 
 - `useState` returns an array with 2 elements `currentStateValue` and function for updating the `currentStateValue`.
+- `state` is separated by on a per-component instance basis.
 
 - `A React hook` is a special function that allows functional components to have access to state, lifecycle methods, and other React features typically only available to class components.
 - Hooks are a way to reuse stateful logic between components and make code more readable and maintainable. Examples of built-in hooks include `useState`, `useEffect`, and `useContext`.
