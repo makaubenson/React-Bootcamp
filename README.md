@@ -212,5 +212,8 @@ export default ExpenseItem;
 
 ### Two Way Binding
 
-- It means for form inputs, we dont just listen to changes, we can pass values back to the inputs so as to reset the input or clear them.
+- In React, two-way binding can be achieved by combining state updates with event handlers.
+
+- When a user interacts with a form element, such as an input, the state of the component updates with the new value. And, when the state updates, the view updates automatically to reflect the changes.
+
 - Two way binding allows us to collect form data and also change it, for example upon submission.
