@@ -3,29 +3,39 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = () => {
-  //Store States
-  //Title State
-  const [enteredTitle, setEnteredTitle] = useState("");
+  // const [enteredTitle, setEnteredTitle] = useState("");
+  // const [enteredAmount, setEnteredAmount] = useState("");
+  // const [enteredDate, setEnteredDate] = useState("");
 
-  //Amount State
-  const [enteredAmount, setEnteredAmount] = useState("");
-
-  //Date State
-  const [enteredDate, setEnteredDate] = useState("");
+  //Using one state object:when you update this state, you have to update all the three properties
+  const [userInput, setUserInput] = useState({
+    enteredTitle: "",
+    enteredAmount: "",
+    enteredDate: "",
+  });
 
   const titleChangeHandler = (event) => {
     // console.log(event.target.value);
-    setEnteredTitle(event.target.value);
+    setUserInput({
+      ...userInput,
+      enteredTitle: event.target.value,
+    });
   };
 
   const amountChangeHandler = (event) => {
     // console.log(event.target.value);
-    setEnteredAmount(event.target.value);
+    setUserInput({
+      ...userInput,
+      enteredAmount: event.target.value,
+    });
   };
 
   const dateChangeHandler = (event) => {
     // console.log(event.target.value);
-    setEnteredDate(event.target.value);
+    setUserInput({
+      ...userInput,
+      enteredDate: event.target.value,
+    });
   };
 
   return (
