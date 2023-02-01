@@ -209,3 +209,8 @@ export default ExpenseItem;
 - `A React hook` is a special function that allows functional components to have access to state, lifecycle methods, and other React features typically only available to class components.
 - Hooks are a way to reuse stateful logic between components and make code more readable and maintainable. Examples of built-in hooks include `useState`, `useEffect`, and `useContext`.
 - React hooks shoukd only be called inside Component functions and not outside.
+
+### Two Way Binding
+
+- It means for form inputs, we dont just listen to changes, we can pass values back to the inputs so as to reset the input or clear them.
+- Two way binding allows us to collect form data and also change it, for example upon submission.
