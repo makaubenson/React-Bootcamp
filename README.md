@@ -221,3 +221,7 @@ export default function Product(props) {
     );
 }
 ```
+
+### Composition
+
+- The concept of building UI from smaller building blocks is called `composition`.
