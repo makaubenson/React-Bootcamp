@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- React is a javascript library for buildimg user interfaces.
+- To break it down:
 
-## Available Scripts
+  - Its a client side js library.
+  - Its all about building modern reactive user interfaces for the web.
 
-In the project directory, you can run:
+- React makes building complex,interactive and reactive user interfaces simpler.
+- React is all about `components`. This is because all user interfaces in the end are made up of components.
 
-### `npm start`
+## Why React instead of JavaScript and it can still achieve the same thing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Js allows devs to write code in an imperative approach. It supports both imperative and declarative programming approaches, although its primary paradigm is imperative. In an imperative approach, developers write code that explicitly specifies the step-by-step instructions for the computer to follow.
+- React allows devs to write code in a declarative,component focused approach.With React, developers describe the structure and behavior of their user interfaces by creating reusable components. These components encapsulate a specific piece of functionality and can be composed together to build complex UIs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## BUilding Single-Page-Applications(SPAs)
 
-### `npm test`
+- When working with React we often build single page applications.
+- In a single page application, the server only sends one HTML page after which React takes over and controls the UI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
 
-### `npm run build`
+- Reusable building blocks in your user interfaces
+- combination of css,js and html code
+- Its not amust to re-use a component to confirm its a component.
+- Components are the building blocks of React applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Why Components?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Allows for:
+  - Reusability (Helps us ensure Dont Repeat yourself principle)
+  - Separation of Concerns (Dont do too many things in one and the same place(function))
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### How is a Component Built?
 
-### `npm run eject`
+- By combining HTML,CSS and JavaScript.
+- Basically we build our own custom HTML elements.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### React uses Declarative Approach
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This means, you only need to define the desired target state(s) and let react figure out the actuve JavaScript DOM instructions.
