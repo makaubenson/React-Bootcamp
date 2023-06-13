@@ -40,3 +40,51 @@
 ### React uses Declarative Approach
 
 - This means, you only need to define the desired target state(s) and let react figure out the actuve JavaScript DOM instructions.
+
+- React code is just javascript code.
+
+- Index.js is the first file that is executed when the app is run.
+
+```
+import ReactDOM from 'react-dom/client';
+
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
+- `createRoot` method creates the main entry point of the overall user interface. Tells React this react app/interface should be placed on the loaded interface.
+
+## Javascript XML (JSX)
+
+- JSX stands for JavaScript XML. It is an extension syntax used in React, a popular JavaScript library for building user interfaces. JSX allows you to write HTML-like code within JavaScript, making it easier to define and render components.
+- With JSX, you can define the structure and appearance of UI elements, such as elements, components, and their properties, in a more declarative and intuitive way. It combines the power of JavaScript and XML-like syntax, enabling you to write dynamic and interactive user interfaces.
+- Here's an example of JSX code:
+
+```
+import React from 'react';
+
+const App = () => {
+  const name = 'John Doe';
+
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Welcome to JSX.</p>
+    </div>
+  );
+};
+
+export default App;
+```
+
+- In the above example, the JSX code is enclosed in parentheses and is written within a JavaScript function component called App. It defines a simple UI with a heading and a paragraph. The curly braces {} allow embedding JavaScript expressions within JSX, as seen in {name} where the name variable is dynamically rendered.
+
+- JSX is transpiled into regular JavaScript function calls by tools like Babel, and React uses these JavaScript function calls to create and update the actual DOM elements in the browser.
+
+- A component is React is just a javsscript function. Only that it returns JSX code.
+
+- lowercase elements are built in elements while elements starting with uppercase caharacter are custom defined.
+- JSX is a syntax extension to JavaScript. It is not a language in itself.
