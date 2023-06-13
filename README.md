@@ -88,3 +88,31 @@ export default App;
 
 - lowercase elements are built in elements while elements starting with uppercase caharacter are custom defined.
 - JSX is a syntax extension to JavaScript. It is not a language in itself.
+
+#### Test 1
+
+```
+import React from 'react';
+import ExerciseComponent from "./ExerciseComponent";
+// don't change the Component name "App"
+export default function App() {
+        return (
+    <div>
+    <p>Todo: solve exercise</p>;
+        <ExerciseComponent></ExerciseComponent>
+    </div>
+  );
+}
+```
+
+```
+import React from 'react';
+// Todo: Add your component code
+// Important: Use export default function MyCmp() { ... }, don't define "export default" on a separate line!
+
+function ExerciseComponent(){
+   return <p>First exercise - done!</p>
+}
+
+export default ExerciseComponent;
+```
