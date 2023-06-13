@@ -116,3 +116,46 @@ function ExerciseComponent(){
 
 export default ExerciseComponent;
 ```
+
+### Re-using components
+
+- by using parameters and a concept called `props`.
+
+#### Props
+
+- "props" is short for "properties" and refers to the data passed from a parent component to its child component(s).
+- Props are a way to communicate and share information between components in a React application.
+
+- When you define a component in React, you can specify props as arguments in the component's function or class declaration.
+- The parent component can then pass values to these props when rendering the child component.
+
+- Here's an example of a functional component in React that accepts props:
+
+```
+import React from 'react';
+
+const Greeting = (props) => {
+  return <h1>Hello, {props.name}!</h1>;
+};
+
+export default Greeting;
+```
+
+- In the above example, the Greeting component receives a single prop called name.
+- When the component is used elsewhere in the application, the parent component can provide a value for this prop:
+
+```
+import React from 'react';
+import Greeting from './Greeting';
+
+const App = () => {
+  return <Greeting name="John Doe" />;
+};
+
+export default App;
+```
+
+- In this case, the Greeting component will render "Hello, John Doe!" as its output because the name prop is passed with the value "John Doe" in the parent component's usage.
+
+- `Props are read-only and should not be modified within the child component`.
+- They are used to pass data and configuration from parent components to their children, allowing for a hierarchical and modular structure in React applications.
