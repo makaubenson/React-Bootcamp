@@ -119,7 +119,7 @@ export default ExerciseComponent;
 
 ### Re-using components
 
-- by using parameters and a concept called `props`.
+- To re-use components, we use a component called `props`.
 
 #### Props
 
