@@ -225,3 +225,80 @@ export default function Product(props) {
 ### Composition
 
 - The concept of building UI from smaller building blocks is called `composition`.
+- In React, composition is a fundamental concept that allows you to combine and reuse components to build complex user interfaces. It promotes a modular and hierarchical approach to UI development.
+- Composition involves creating components that encapsulate specific functionality or UI elements and then combining them together to form more complex components. This allows you to build upon existing components, reuse code, and create a component hierarchy that reflects the structure of your application.
+- Here are a few examples of composition in React:
+#### Function Composition:
+- Function composition is a technique where multiple functions are combined to create a new function. In React, you can use function composition to create higher-order components (HOCs) or custom hooks.
+```
+const withLogging = (WrappedComponent) => {
+  return (props) => {
+    console.log('Component is rendered:', WrappedComponent.name);
+    return <WrappedComponent {...props} />;
+  };
+};
+
+const MyComponent = (props) => {
+  // component logic
+};
+
+const LoggedComponent = withLogging(MyComponent);
+
+// Now, when rendering LoggedComponent, it will log the component's name.
+```
+#### Component Composition:
+- Component composition involves combining smaller components to create more complex components. This is achieved by nesting components within one another, passing data through props, and using them to build the desired UI structure.
+```
+const Button = ({ onClick, label }) => {
+  return <button onClick={onClick}>{label}</button>;
+};
+
+const Card = ({ title, content }) => {
+  return (
+    <div className="card">
+      <h2>{title}</h2>
+      <p>{content}</p>
+      <Button onClick={() => console.log('Button clicked')} label="Click Me" />
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div>
+      <Card title="Welcome" content="This is a sample card." />
+    </div>
+  );
+};
+```
+- In the above example, the Card component is composed by combining the Button component and other HTML elements. The Button component itself can be reused in other parts of the application.
+#### Render Props:
+- Render props is a pattern in React where a component accepts a function as a prop, which it then calls and passes data to. This allows for dynamic and flexible rendering behavior.
+```
+const MouseTracker = ({ render }) => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    setPosition({ x: event.clientX, y: event.clientY });
+  };
+
+  return <div onMouseMove={handleMouseMove}>{render(position)}</div>;
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>Mouse Tracker</h1>
+      <MouseTracker
+        render={(position) => (
+          <p>
+            Mouse position: {position.x}, {position.y}
+          </p>
+        )}
+      />
+    </div>
+  );
+};
+```
+- In this example, the MouseTracker component encapsulates the logic for tracking mouse movement. It accepts a render prop, which is a function that receives the current mouse position as an argument. The component then calls this function and passes the position data, allowing the rendered output to be customized by the parent component.
+- These examples demonstrate different aspects of composition in React, showcasing how components can be combined and reused to build flexible and maintainable UIs. Composition is a powerful concept in React that enables code modularity, reusability, and extensibility.
