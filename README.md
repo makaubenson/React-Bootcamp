@@ -302,3 +302,31 @@ const App = () => {
 ```
 - In this example, the MouseTracker component encapsulates the logic for tracking mouse movement. It accepts a render prop, which is a function that receives the current mouse position as an argument. The component then calls this function and passes the position data, allowing the rendered output to be customized by the parent component.
 - These examples demonstrate different aspects of composition in React, showcasing how components can be combined and reused to build flexible and maintainable UIs. Composition is a powerful concept in React that enables code modularity, reusability, and extensibility.
+
+### Listening and Handling Events on React.js
+#### Events
+- An event is an action that takes place when a user interacts with a program. For example, a click event occurs when a user clicks on a button, a change event occurs when a user changes the value of an input field, and a scroll event occurs when a user scrolls through a page.
+#### What is an event handler?
+- An event handler is a callback routine that operates asynchronously once an event takes place. It dictates the action that follows the event. The programmer writes a code for this action to take place.
+#### How to listen to events in ReactJS?
+- To listen to events in ReactJS, you can use the `onClick`, `onChange`, `onBlur`, `onFocus`, and other event handlers. For example, the following code listens to the onClick event on a button and calls the handleClick function when the button is clicked:
+```
+const Button = ({ handleClick }) => (
+  <button onClick={handleClick}>Click me</button>
+);
+```
+#### How to handle events in ReactJS?
+- The event handler function is passed an event object as a parameter. The event object contains information about the event, such as the type of event, the target element, and the event's properties. You can use the event object to access this information and take action accordingly.
+- For example, the following code handles the onClick event on a button by changing the text of the button:
+```
+const Button = ({ handleClick }) => (
+  <button onClick={handleClick}>Click me</button>
+);
+
+const handleClick = (e) => {
+  e.target.innerText = "I've been clicked!";
+};
+```
+- Event handlers are functions, so they can be passed as props to components.
+- Event handlers are executed asynchronously, so they should not modify the DOM directly.
+- You can use the `stopPropagation()` and `preventDefault()` methods on the event object to stop the event from bubbling up the DOM hierarchy or preventing the default action from being taken.
