@@ -349,4 +349,6 @@ const handleClick = (e) => {
 - The update function takes a new value for the state variable as an argument.
 - The useState hook returns an array. 
 - The first element of the array is the current value of the state variable and the second element is the function to update the state variable.
-- For example, the following code uses the useState hook to track the number of button clicks:
+ 
+![useState](https://github.com/makaubenson/React-Bootcamp/assets/59168713/c5ee4211-cabb-4066-a379-8f08b0ae6fd5)
+
