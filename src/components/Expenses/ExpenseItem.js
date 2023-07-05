@@ -9,7 +9,7 @@ const ExpenseItem = (props) => {
   // They Should NOT be used in nested functions
   const [title, setTitle] = useState(props.title);
 
-    const clickHandler = () =>{
+    const clickHandler = () => {
       setTitle('Updated');
       console.log(title)
     };
