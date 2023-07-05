@@ -354,6 +354,5 @@ const handleClick = (e) => {
 
 ![useState](https://github.com/makaubenson/React-Bootcamp/assets/59168713/c5ee4211-cabb-4066-a379-8f08b0ae6fd5)
 
-
-
+- Note: React hooks must only be called inside components. Also, they cant be called inside nested functions.
 

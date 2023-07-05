@@ -5,13 +5,11 @@ import Card from "../UI/Card";
 
 const ExpenseItem = (props) => {
   //React hook start with `use`
-  //They must be used inside React Components
-  // They Should NOT be used in nested functions
   const [title, setTitle] = useState(props.title);
 
     const clickHandler = () => {
-      setTitle('Updated');
-      console.log(title)
+      setTitle('Updated!');
+      // console.log(title);
     };
 
   return (
