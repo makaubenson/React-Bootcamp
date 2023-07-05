@@ -371,3 +371,31 @@ const handleClick = (e) => {
             return { ...prevState, enteredTitle:event.target.value}
         })
 ```
+
+#### Two Way Binding
+- Two-way binding is a concept in web development that allows data to flow bidirectionally between a form input field and a data model. It enables changes made in the form input to update the underlying data model, and conversely, changes made to the data model reflect in the form input.
+- In the context of forms, two-way binding is particularly useful as it provides a seamless way to keep the form and the associated data synchronized. When a user enters or modifies data in an input field, the changes are immediately reflected in the data model. Similarly, if the data model is updated programmatically, the form input fields automatically display the updated values.
+- Here's an example in React to illustrate how two-way binding can be achieved:
+```
+import React, { useState } from 'react';
+
+export default function App() {
+  const [name, setName] = useState('');
+
+  const handleInputChange = (event) => {
+    setName(event.target.value);
+  };
+
+  return (
+    <div>
+      <label>Name:</label>
+      <input type="text" value={name} onChange={handleInputChange} />
+      <p>Hello, {name}!</p>
+    </div>
+  );
+}
+
+```
+- In this example, we have a form with an input field for the user's name. The name state variable holds the current value of the input field. By binding the value attribute of the input field to the name state, we establish the initial value and ensure that any changes in the input field update the state.
+- The `handleInputChange` function is triggered whenever the input value changes. It updates the name state with the new value, ensuring that the form and the state stay synchronized.
+- Finally, the name state is displayed within the <p> element, allowing us to see the updated value as the user types.
