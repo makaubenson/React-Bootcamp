@@ -356,3 +356,5 @@ const handleClick = (e) => {
 
 - Note: React hooks must only be called inside components. Also, they cant be called inside nested functions.
 
+#### More About useState hook
+- useState registers a state per component basis. Only a single component experiences state kept by useState. if we have 4 components and useState is used to update title, only the component that has been clicked changes title.
