@@ -14,7 +14,7 @@
 - Js allows devs to write code in an imperative approach. It supports both imperative and declarative programming approaches, although its primary paradigm is imperative. In an imperative approach, developers write code that explicitly specifies the step-by-step instructions for the computer to follow.
 - React allows devs to write code in a declarative,component focused approach.With React, developers describe the structure and behavior of their user interfaces by creating reusable components. These components encapsulate a specific piece of functionality and can be composed together to build complex UIs.
 
-## BUilding Single-Page-Applications(SPAs)
+## Building Single-Page-Applications(SPAs)
 
 - When working with React we often build single page applications.
 - In a single page application, the server only sends one HTML page after which React takes over and controls the UI.
@@ -26,7 +26,7 @@
 - Its not amust to re-use a component to confirm its a component.
 - Components are the building blocks of React applications.
 
-### Why Components?
+### Why Use Components?
 
 - Allows for:
   - Reusability (Helps us ensure Dont Repeat yourself principle)
