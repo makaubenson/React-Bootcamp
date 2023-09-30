@@ -436,6 +436,7 @@ export default function App() {
 
 
 ```
-- In this example, we have a form with an input field for the user's name. The name state variable holds the current value of the input field. By binding the value attribute of the input field to the name state, we establish the initial value and ensure that any changes in the input field update the state.
+- In this example, we have a form with an input field for the user's name. The name state variable holds the current value of the input field.
+- By binding the value attribute of the input field to the name state, we establish the initial value and ensure that any changes in the input field update the state.
 - The `handleInputChange` function is triggered whenever the input value changes. It updates the name state with the new value, ensuring that the form and the state stay synchronized.
 - Finally, the name state is displayed within the <p> element, allowing us to see the updated value as the user types.
