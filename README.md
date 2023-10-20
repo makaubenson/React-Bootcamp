@@ -396,9 +396,9 @@ const handleClick = (e) => {
 - When depending on previous state to update another state, use the syntaxt below
 
 ```
-        setUserInput((prevState) => {
-            return { ...prevState, enteredTitle:event.target.value}
-        })
+    setUserInput((prevState) => {
+        return { ...prevState, enteredTitle:event.target.value}
+    })
 ```
 
 #### Two Way Binding
