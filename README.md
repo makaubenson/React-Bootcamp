@@ -206,7 +206,7 @@ export default function App() {
 }
 ```
 
-Product.js
+- Product.js
 
 ```
 import React from 'react';
@@ -402,7 +402,6 @@ const handleClick = (e) => {
 ```
 
 #### Two Way Binding
-
 - Two-way binding is a concept in web development that allows data to flow bidirectionally between a form input field and a data model. It enables changes made in the form input to update the underlying data model, and conversely, changes made to the data model reflect in the form input.
 - In the context of forms, two-way binding is particularly useful as it provides a seamless way to keep the form and the associated data synchronized. When a user enters or modifies data in an input field, the changes are immediately reflected in the data model. Similarly, if the data model is updated programmatically, the form input fields automatically display the updated values.
 - Here's an example in React to illustrate how two-way binding can be achieved:
@@ -427,13 +426,11 @@ export default function App() {
 }
 
 ### Lifting The State Up
-
 ![lifting state up](https://github.com/makaubenson/React-Bootcamp/assets/59168713/450e8567-2ea1-4924-94d0-8a99060c8def)
 
 ![lifting state up 2](https://github.com/makaubenson/React-Bootcamp/assets/59168713/126e4e2b-3733-49dc-a6e5-ff6596e947b9)
 
 ![lifting state 3](https://github.com/makaubenson/React-Bootcamp/assets/59168713/07563be6-dd52-49dd-b01e-86b4f9004f6d)
-
 
 ```
 - In this example, we have a form with an input field for the user's name. The name state variable holds the current value of the input field.
